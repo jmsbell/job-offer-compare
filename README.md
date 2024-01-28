@@ -1,3 +1,3 @@
 # job-offer-compare
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/jmsbell/job-offer-compare)
+This is a simple calculator to compare two different job offers
