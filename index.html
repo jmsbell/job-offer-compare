@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Offer Compare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Job Offer Compare</h1>
+
+    <div class="job-container">
+        <div class="job" id="job1">
+            <h2>Job 1</h2>
+            <label for="job1Salary">Salary:</label>
+            <input type="text" id="job1Salary">
+
+            <label for="job1RSU">RSU / 4 yr:</label>
+            <input type="text" id="job1RSU">
+
+            <label for="job1Bonus">Bonus:</label>
+            <input type="text" id="job1Bonus">
+
+            <label for="job1Location">Location:</label>
+            <input type="text" id="job1Location">
+
+            <label for="job1CommuteTime">Commute Time:</label>
+            <input type="text" id="job1CommuteTime">
+
+            <label for="job1WorkHours">Expected Work Hours:</label>
+            <input type="text" id="job1WorkHours">
+        </div>
+
+        <div class="job" id="job2">
+            <h2>Job 2</h2>
+            <label for="job2Salary">Salary:</label>
+            <input type="text" id="job2Salary">
+
+            <label for="job2RSU">RSU:</label>
+            <input type="text" id="job2RSU">
+
+            <label for="job2Bonus">Bonus:</label>
+            <input type="text" id="job2Bonus">
+
+            <label for="job2Location">Location:</label>
+            <input type="text" id="job2Location">
+
+            <label for="job2CommuteTime">Commute Time:</label>
+            <input type="text" id="job2CommuteTime">
+
+            <label for="job2WorkHours">Expected Work Hours:</label>
+            <input type="text" id="job2WorkHours">
+        </div>
+    </div>
+
+    <button onclick="compareJobs()">Compare Jobs</button>
+
+    <div class="result-overlay" id="resultOverlay">
+        <div class="result-modal">
+            <span class="close-btn" onclick="closeResultOverlay()">&times;</span>
+            <h2>Comparison Result</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
