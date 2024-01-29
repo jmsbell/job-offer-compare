@@ -14,8 +14,8 @@ function compareJobs() {
   const job2WorkHours = parseFloat(document.getElementById('job2WorkHours').value) || 0;
 
   // Calculate total values for both jobs
-  const totalJob1 = job1Salary + job1RSU + job1Bonus;
-  const totalJob2 = job2Salary + job2RSU + job2Bonus;
+  const totalJob1 = job1Salary + (job1RSU / 4) + job1Bonus;
+  const totalJob2 = job2Salary + (job2RSU / 4) + job2Bonus;
 
   // Calculate rates per hour for both jobs
   const rateJob1 = totalJob1 / ((job1CommuteTime + job1WorkHours)*52);
